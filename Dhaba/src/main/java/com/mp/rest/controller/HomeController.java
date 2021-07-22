@@ -23,6 +23,7 @@ public class HomeController {
 	@RequestMapping("dhaba")
 	public String dhaba()
 	{
+		System.out.println("sdfsdfds");
 		return "dhaba";
 	}
 	

@@ -1,8 +1,11 @@
 package com.mp.rest.repository;
 
+import org.springframework.stereotype.Repository;
+
 import com.mp.rest.model.User;
 
-public class UserRepository {
+@Repository
+public class UserRepositoryImpl {
 
 	
 	public boolean userRegistraton(User user) {

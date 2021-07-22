@@ -24,7 +24,7 @@ public class User {
 		
 	}
 	
-	public User(String name, int phone, String email, String pass) {
+	public User(String name, long phone, String email, String pass) {
 		super();
 		this.name = name;
 		this.phone = phone;
@@ -40,7 +40,7 @@ public class User {
 	public long getPhone() {
 		return phone;
 	}
-	public void setPhone(int phone) {
+	public void setPhone(long phone) {
 		this.phone = phone;
 	}
 	public String getEmail() {

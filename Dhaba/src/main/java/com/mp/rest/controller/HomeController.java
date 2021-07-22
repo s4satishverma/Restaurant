@@ -27,4 +27,9 @@ public class HomeController {
 	}
 	
 	
+	@RequestMapping("hi")
+	public String sayHiiissssi()
+	{
+		return "hello, hwo are you";
+	}
 }

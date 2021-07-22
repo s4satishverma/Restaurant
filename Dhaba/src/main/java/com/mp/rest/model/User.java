@@ -1,15 +1,22 @@
 package com.mp.rest.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
 
 @Entity
 @Table(name="users")
 public class User {
 
-	
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
 	private String name;
-	private int phone;
+	private long phone;
 	private String email;
 	private String pass;
 	
@@ -30,7 +37,7 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getPhone() {
+	public long getPhone() {
 		return phone;
 	}
 	public void setPhone(int phone) {

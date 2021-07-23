@@ -1,10 +1,12 @@
 package com.mp.rest.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -30,7 +32,20 @@ public class UserController {
 	
 	@GetMapping(path="/getValues")
 	public String getValues() {
-		System.out.println("yes, I am fine");
+	  System.out.println("yes, I am fine");
+	  return "yeah values";
+	}
+	
+	@GetMapping(path="/getUserByEmail", produces=MediaType.APPLICATION_JSON_VALUE)
+	public User getUser(@RequestParam("email") String email) {
+		User user = userServ.getUser(email);
+		System.out.print(user.getPass());
+	    return user;
+	}
+	
+	@GetMapping(path="/getUsers")
+	public String getUsers() {
+	  System.out.println("yes, I am fine");
 	  return "yeah values";
 	}
 	

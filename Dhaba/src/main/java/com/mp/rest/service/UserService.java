@@ -15,6 +15,7 @@ public class UserService {
 
 	@Autowired
 	private UserRepository userRepo;
+	//private User user;
 	
 	public boolean userRegistraton(User user)
 	{
@@ -22,6 +23,14 @@ public class UserService {
 		 userRepo.save(user);
 		return true;
 	}
+	
+	public User getUser(String email){
+		System.out.println("................ssss.........."+userRepo.findByEmail(email));
+		User user = userRepo.findByEmail(email);
+	//	System.out.print("///......................"+user);
+		return user;
+	}
+	
 	
 	
 }

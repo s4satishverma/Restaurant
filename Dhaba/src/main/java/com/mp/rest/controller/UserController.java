@@ -39,7 +39,7 @@ public class UserController {
 	@GetMapping(path="/getUserByEmail", produces=MediaType.APPLICATION_JSON_VALUE)
 	public User getUser(@RequestParam("email") String email) {
 		User user = userServ.getUser(email);
-		System.out.print(user.getPass());
+	//	System.out.print(user.getPass());
 	    return user;
 	}
 	

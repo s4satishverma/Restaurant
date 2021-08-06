@@ -19,7 +19,7 @@ public class UserController {
 	@Autowired
 	private UserService userServ;
 	
-	
+	// user registration
 	@PostMapping("/userreg")
 	public void registerUser(User user) {
 		System.out.println(user.getName());
@@ -39,18 +39,15 @@ public class UserController {
 	@GetMapping(path="/getUserByEmail", produces=MediaType.APPLICATION_JSON_VALUE)
 	public User getUser(@RequestParam("email") String email) {
 		User user = userServ.getUser(email);
-	//	System.out.print(user.getPass());
 	    return user;
 	}
 	
 	@GetMapping(path="/getUsers")
 	public String getUsers() {
-	  System.out.println("yes, I am fine");
 	  return "yeah values";
 	}
 	
-	
-	
+		
 	public ModelAndView login() {
 		ModelAndView mav = new ModelAndView("login");
 		mav.addObject("user","");

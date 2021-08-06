@@ -24,6 +24,7 @@ public class User {
 		
 	}
 	
+	// constructor injection
 	public User(String name, long phone, String email, String pass) {
 		super();
 		this.name = name;

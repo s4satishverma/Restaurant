@@ -1,5 +1,5 @@
 package com.mp.experiment;
-
+// default method in an interface
  interface A{
 	
 	default public void print()

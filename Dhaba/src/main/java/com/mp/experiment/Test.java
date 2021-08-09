@@ -15,6 +15,7 @@ interface A{
 	}
 }
  
+ // removed conflicts
 public class Test implements A,B{
 	
 	public static void main(String...a)

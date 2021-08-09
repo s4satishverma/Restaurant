@@ -1,6 +1,6 @@
 package com.mp.experiment;
-// default method in an interface
- interface A{
+
+interface A{
 	
 	default public void print()
 	{
@@ -9,17 +9,14 @@ package com.mp.experiment;
 }
 
  interface B{
-	default public void print()
+	default public void printB()
 	{
 	 System.out.println("Hello B");	
 	}
 }
  
+ // removed conflicts
 public class Test implements A,B{
-
-	public void print() {
-		 System.out.println("Hello Test ");	
-	}
 	
 	public static void main(String...a)
 	{

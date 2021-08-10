@@ -8,6 +8,7 @@
 		<version>2.5.2</version>
 		<relativePath/> 
 	</parent>
+	<!-- this is in D-1 file -->
 	<groupId>com.mp.rest</groupId>
 	<artifactId>Dhaba</artifactId>
 	<version>0.0.1-SNAPSHOT</version>

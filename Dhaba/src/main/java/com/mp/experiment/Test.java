@@ -4,14 +4,14 @@ interface A{
 	
 	default public void print()
 	{
-	 System.out.println("Hello A");	
+	 System.out.println("Hello print...");	
 	}
 }
 
  interface B{
 	default public void printB()
 	{
-	 System.out.println("Hello B");	
+	 System.out.println("Hello print B");	
 	}
 }
  

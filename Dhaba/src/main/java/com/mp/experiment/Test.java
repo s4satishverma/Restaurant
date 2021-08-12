@@ -6,17 +6,15 @@ interface A{
 	{
 	 System.out.println("Hello print...");	
 	}
-}
-
- interface B{
 	default public void printB()
 	{
 	 System.out.println("Hello print B");	
 	}
 }
+
  
  // removed conflicts
-public class Test implements A,B{
+public class Test implements A{
 	
 	public static void main(String...a)
 	{

@@ -12,6 +12,18 @@ interface A{
 	}
 }
 
+interface Btest{
+	
+	default public void printTest()
+	{
+	 System.out.println("Hello print...");	
+	}
+	default public void printBTest()
+	{
+	 System.out.println("Hello print B");	
+	}
+}
+
  
  // removed conflicts
 public class Test implements A{

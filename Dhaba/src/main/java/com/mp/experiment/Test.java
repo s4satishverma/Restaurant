@@ -12,16 +12,14 @@ interface A{
 	}
 }
 
+// testing
 interface B{
 	
 	default public void print()
 	{
 	 System.out.println("Hello print...");	
 	}
-	default public void printB()
-	{
-	 System.out.println("Hello print B");	
-	}
+
 }
 
  

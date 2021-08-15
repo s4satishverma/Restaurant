@@ -12,13 +12,13 @@ interface A{
 	}
 }
 
-interface Btest{
+interface B{
 	
-	default public void printTest()
+	default public void print()
 	{
 	 System.out.println("Hello print...");	
 	}
-	default public void printBTest()
+	default public void printB()
 	{
 	 System.out.println("Hello print B");	
 	}

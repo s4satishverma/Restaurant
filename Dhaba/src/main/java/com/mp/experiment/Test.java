@@ -11,4 +11,10 @@ public class Test implements HelloWorld{
 	{
 	 System.out.println("hi");
 	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
 }

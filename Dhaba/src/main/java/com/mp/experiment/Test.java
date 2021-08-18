@@ -2,9 +2,6 @@ package com.mp.experiment;
 
 interface   HelloWorld{
 	  void show(); 
-	  default void print() {
-		
-	  }
 	 
 	}
 

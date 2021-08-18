@@ -1,33 +1,25 @@
 package com.mp.experiment;
 
-interface A{
-	
-	default public void print()
-	{
-	 System.out.println("Hello print...");	
-	}
-	default public void printB()
-	{
-	 System.out.println("Hello print B");	
-	}
-}
-
-// testing
-interface B{
-	
-	default public void print()
-	{
-	 System.out.println("Hello print...");	
+interface   HelloWorld{
+	  void show(); 
+	  default void print() {
+		  System.out.println("hellos");
+	  }
+	 
 	}
 
-}
-
- 
  // removed conflicts
-public class Test implements A{
+public class Test implements HelloWorld{
 	
 	public static void main(String...a)
 	{
-	  new Test().print();	
+	 System.out.println("hi");
 	}
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
